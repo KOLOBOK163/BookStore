@@ -1,42 +1,46 @@
 /* src/components/common/BookCard.css */
 .book-card {
     background-color: #ffffff;
-    padding: 1rem;
+    padding: 1.5rem; /* Увеличил padding для большего пространства */
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .book-card:hover {
+    min-height: 300px; /* Добавил минимальную высоту для карточки */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Равномерное распределение элементов */
+}
+
+.book-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .book-card a {
+}
+
+.book-card a {
     text-decoration: none;
-  }
-  
-  .book-card h3 {
+}
+
+.book-card h3 {
     font-size: 1.1rem;
     color: #333;
     font-weight: 600;
     margin-bottom: 0.5rem;
-  }
-  
-  .book-card p {
+}
+
+.book-card p {
     font-size: 0.9rem;
     color: #555;
     margin-bottom: 0.5rem;
-  }
-  
-  .book-card p:last-of-type {
+}
+
+.book-card p:last-of-type {
     color: #4a90e2;
     font-weight: 700;
-  }
-  
-  .book-card button {
+}
+
+.book-card button {
     margin-top: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1.5rem; /* Увеличил padding для кнопки */
     background-color: #4a90e2;
     color: #fff;
     border: none;
@@ -45,8 +49,10 @@
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .book-card button:hover {
+    min-width: 100px; /* Минимальная ширина кнопки, чтобы текст "Купить" помещался */
+    align-self: center; /* Центрирование кнопки */
+}
+
+.book-card button:hover {
     background-color: #357abd;
-  }
+}

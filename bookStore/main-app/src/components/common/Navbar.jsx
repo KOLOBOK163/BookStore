@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-content">
-        <Link to="/" className="navbar-brand">Книжный магазин</Link>
+        <Link to="/" className="navbar-brand">BookLand</Link>
         <div className="navbar-links">
           <Link to="/">Главная</Link>
           <Link to="/cart">Корзина ({cart.length})</Link>

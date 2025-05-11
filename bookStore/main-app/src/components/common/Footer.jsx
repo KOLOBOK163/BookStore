@@ -5,7 +5,7 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>© 2025 Книжный магазин. Все права защищены.</p>
+      <p>© 2025 BookLand. Все права защищены.</p>
     </footer>
   );
 };

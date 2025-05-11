@@ -1,9 +1,7 @@
 import React from 'react';
-import { useAuth } from '../../hooks/useAuth';
 import './BookDetails.css';
 
 const BookDetails = ({ book }) => {
-  const { addToCart, user } = useAuth();
 
   return (
     <div className="book-details">
@@ -22,9 +20,6 @@ const BookDetails = ({ book }) => {
       <p><strong>Год издания:</strong> {book.publicationYear}</p>
       <p><strong>ISBN:</strong> {book.isbn}</p>
       <p><strong>В наличии:</strong> {book.stock} шт.</p>
-      {user && (
-        <button onClick={() => addToCart(book)}>В корзину</button>
-      )}
     </div>
   );
 };

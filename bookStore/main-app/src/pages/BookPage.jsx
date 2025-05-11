@@ -36,7 +36,6 @@ const BookPage = () => {
       return;
     }
     addToCart(book);
-    alert('Книга добавлена в корзину!');
   };
 
   const handleBuyNow = (e) => {
