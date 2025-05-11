@@ -1,0 +1,29 @@
+/* src/index.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Стили для Toastify */
+.Toastify__toast {
+  border-radius: 8px !important;
+  font-family: 'Arial', sans-serif !important;
+}
+
+.Toastify__toast--success {
+  background-color: #388e3c !important;
+}
+
+.Toastify__toast--error {
+  background-color: #d32f2f !important;
+}
+
+.Toastify__toast--info {
+  background-color: #4a90e2 !important;
+}

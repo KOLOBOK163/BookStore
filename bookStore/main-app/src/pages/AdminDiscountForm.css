@@ -1,0 +1,137 @@
+.admin-discount-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-discount-container h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.admin-discount-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.admin-discount-form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.admin-discount-form input:focus {
+  border-color: #007bff;
+}
+
+.admin-discount-form button {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin-discount-form button:hover {
+  background-color: #0056b3;
+}
+
+.discount-list {
+  list-style: none;
+  padding: 0;
+}
+
+.discount-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  transition: box-shadow 0.3s;
+}
+
+.discount-item:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.discount-item span {
+  font-size: 16px;
+  color: #333;
+}
+
+.discount-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.discount-actions button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.discount-actions button.edit {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.discount-actions button.edit:hover {
+  background-color: #218838;
+}
+
+.discount-actions button.delete {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.discount-actions button.delete:hover {
+  background-color: #c82333;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  .admin-discount-container {
+    padding: 15px;
+  }
+
+  .admin-discount-form input,
+  .admin-discount-form button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .discount-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .discount-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .discount-actions button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}

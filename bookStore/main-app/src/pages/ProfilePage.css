@@ -1,0 +1,127 @@
+.profile-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.profile-title {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.profile-info {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.profile-info p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 16px;
+}
+
+.profile-info strong {
+  color: #007bff;
+}
+
+.topup-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.topup-card:hover {
+  transform: translateY(-5px);
+}
+
+.topup-title {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.topup-form {
+  display: grid;
+  gap: 10px;
+}
+
+.topup-input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+.topup-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.topup-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.topup-input.short {
+  width: 100%;
+}
+
+.topup-button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.topup-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.topup-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.transaction-history {
+  margin-top: 20px;
+}
+
+.transaction-title {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.transaction-list {
+  list-style: none;
+  padding: 0;
+}
+
+.transaction-item {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  color: #555;
+  font-size: 14px;
+}
+
+.transaction-item strong {
+  color: #28a745;
+}

@@ -1,0 +1,155 @@
+/* src/components/auth/Register.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  }
+  
+  .register-container {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .register-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .register-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .success-message {
+    background-color: #e7f3e7;
+    color: #2e7d32;
+    padding: 0.75rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .error-message {
+    background-color: #fce7e7;
+    color: #d32f2f;
+    padding: 0.75rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .input-wrapper:focus-within {
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+  }
+  
+  .input-wrapper svg {
+    margin-left: 0.75rem;
+    color: #888;
+  }
+  
+  .input-wrapper input {
+    flex: 1;
+    padding: 0.75rem 0.75rem 0.75rem 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+  }
+  
+  .input-wrapper input::placeholder {
+    color: #bbb;
+  }
+  
+  .error {
+    border-color: #d32f2f !important;
+  }
+  
+  .error-text {
+    color: #d32f2f;
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+  }
+  
+  .submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #357abd;
+  }
+  
+  .submit-button:disabled {
+    background-color: #a3c9f1;
+    cursor: not-allowed;
+  }
+  
+  .submit-button svg {
+    margin-right: 0.5rem;
+  }
+  
+  .login-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .login-link a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
